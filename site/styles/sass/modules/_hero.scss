@@ -1,0 +1,34 @@
+.hero {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.hero-content {
+	color: #ffffff;
+	margin-left: 50vw;
+	margin-right: 10vw;
+	padding: 4rem 0 7rem;
+	position: relative;
+	text-align: center;
+	width: 520px;
+}
+
+.hero-title {
+	font-size: 3rem;
+	line-height: 1.35em;
+}
+
+.hero-copy {
+	font-size: 1.3rem;
+	line-height: 1.5em;
+	margin-bottom: 2.5rem;
+}
+
+.hero-container {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
