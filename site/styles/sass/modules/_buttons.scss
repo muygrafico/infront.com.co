@@ -1,0 +1,12 @@
+$blue: #6aa0d2;
+
+.button {
+	background-color: $blue;
+	border-radius: 2.25rem;
+	color: #ffffff;
+	font-weight: bold;
+	padding: .8rem 1rem;
+	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .2);
+	text-decoration: none;
+	letter-spacing: .1rem;
+}

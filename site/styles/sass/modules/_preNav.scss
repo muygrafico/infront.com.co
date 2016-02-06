@@ -1,0 +1,38 @@
+$colorA: #8a8b88;
+$colorB: #f0f0f0;
+$fontSize: .75em;
+
+.pre-nav {
+	background-color: $colorB;
+	color: $colorA;
+	display: block;
+	font-size: $fontSize;
+	padding: .5rem 1rem;
+	text-align: right;
+	width: 100%;
+}
+
+.pre-nav-box {
+	display: inline-block;
+	padding: 0 .5rem;
+
+	&:not(:last-child) {
+		border-right: 1px solid $colorA;
+	}
+}
+
+.pre-nav-social {
+	background-color: $colorA;
+	border-radius: 50%;
+	color: $colorB;
+	height: 1rem;
+	line-height: 1rem !important;
+	text-align: center;
+	vertical-align: middle;
+	width: 1rem;
+}
+
+.pre-nav-item {
+	display: inline-block;
+	margin: 0 .25rem;
+}
