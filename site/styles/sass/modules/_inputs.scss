@@ -1,0 +1,26 @@
+.input-container {
+	position: relative;
+	width: 100%;
+
+	input {
+		background: none;
+		border: none;
+		border-bottom: 1px solid #ffffff;
+		padding: 1.8rem 0 .6rem;
+		width: 100%;
+
+		&:focus + label, &.not-empty {
+			font-size: .6em;
+			top: .5rem;
+		}
+	}
+
+	label {
+		position: absolute;
+		font-size: .8rem;
+		left: 0;
+		top: 1.8rem;
+		transition: font-size .2s ease-out, top .2s ease-out;
+		transform: translate3d(0,0,0);
+	}
+}

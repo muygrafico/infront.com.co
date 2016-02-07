@@ -1,0 +1,47 @@
+.people {
+	background-color: #3e4f63;
+	color: #ffffff;
+	padding: 2.25rem 1rem 2.5rem;
+}
+
+.people-box {
+	margin: auto;
+	width: 50%
+}
+
+.people-avatar {
+	border-radius: 50%;
+	display: inline-block;
+	height: 100px;
+	overflow: hidden;
+	vertical-align: top;
+	width: 100px;
+
+	img {
+		width: 100%;
+	}
+}
+
+.people-bio {
+	display: inline-block;
+	padding: 2rem 1.3rem 1.3rem;
+	vertical-align: top;
+}
+
+.people-name {
+	display: block;
+	font-size: 1.6rem;
+}
+
+.people-job {
+	font-size: .8rem;
+}
+
+.people-quote {
+	display: block;
+	font-size: 1.1rem;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 1.6em;
+	margin-top: 1.5rem;
+}

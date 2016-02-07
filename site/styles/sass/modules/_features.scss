@@ -27,12 +27,13 @@
 .features-hero-title {
 	color: #3f3f3f;
 	font-size: 2.1rem;
-	line-height: 1em;
+	line-height: 1.3em;
 	position: absolute;
 	text-align: left;
 	top: 50%;
 
 	small {
+		display: block;
 		color: #9b9b9b;
 		font-size: .7em;
 	}

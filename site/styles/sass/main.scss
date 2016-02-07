@@ -11,12 +11,15 @@
 @import 'modules/utils';
 @import 'modules/icons';
 @import 'modules/buttons';
+@import 'modules/inputs';
 @import 'modules/preNav';
 @import 'modules/nav';
 @import 'modules/hero';
 @import 'modules/hiw';
 @import 'modules/decoration';
 @import 'modules/features';
+@import 'modules/people';
+@import 'modules/contact';
 
 /* base styles */
 
@@ -31,5 +34,10 @@ body {
 
 	a {
 		color: initial;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
 	}
 }

@@ -21,4 +21,10 @@ $blueBorder: #66a4de;
 	&.is-full {
 		width: 100%;
 	}
+
+	&.white {
+		background-color: #ffffff;
+		color: #000000;
+		border: 1px solid rgba(0,0,0,.1);
+	}
 }
