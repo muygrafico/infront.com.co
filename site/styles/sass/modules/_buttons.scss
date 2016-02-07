@@ -17,4 +17,8 @@ $blueBorder: #66a4de;
 		padding: 1rem 3rem;
 		font-size: 1.25rem;
 	}
+
+	&.is-full {
+		width: 100%;
+	}
 }
