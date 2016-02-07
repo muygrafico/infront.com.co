@@ -25,9 +25,9 @@ $purple: #b293bf;
 
 .hiw-box {
 	display: inline-block;
-	width: 340px;
 	margin: 0 1rem;
 	vertical-align: top;
+	width: calc(33% - 2rem);
 
 	.button {
 		margin-top: 1.3rem;

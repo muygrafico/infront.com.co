@@ -1,0 +1,65 @@
+.footer {
+	background-color: $grayBlue;
+	padding: 4rem 0 3rem;
+
+	a {
+		text-decoration: none;
+		color: #ffffff;
+	}
+}
+
+.footer-container {
+	font-size: 0;
+	line-height: 0;
+}
+
+.footer-box {
+	color: #ffffff;
+	display: inline-block;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	vertical-align: top;
+	width: 37%;
+
+	&:not(:first-child) {
+		padding: 0 3.1rem;
+	}
+
+	&.small {
+		border-left: 1px solid #ffffff;
+		position: relative;
+		top: 3.5rem;
+		padding-right: 0;
+		width: 26%;
+
+		.footer-title {
+			position: absolute;
+			top: -3.5rem;
+		}
+
+		.footer-nav {
+			position: relative;
+			top: -.5rem;
+		}
+	}
+
+	&.fix-padding {
+		margin-top: 3rem;
+	}
+}
+
+.footer-title {
+	font-size: 1.1rem;
+	margin-bottom: 1.5rem;
+}
+
+.footer-copy {
+	margin: 0;
+}
+
+.footer-nav {
+}
+
+.footer-nav-item {
+	display: block;
+}
