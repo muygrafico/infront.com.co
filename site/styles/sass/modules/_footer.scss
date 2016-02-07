@@ -63,3 +63,25 @@
 .footer-nav-item {
 	display: block;
 }
+
+.footer-social {
+	font-size: .6rem;
+	margin-top: .4rem;
+}
+
+.footer-social-item {
+	background-color: #45586e;
+	border-radius: 50%;
+	color: $grayBlue;
+	display: inline-block;
+	font-size: .7rem;
+	height: 1rem;
+	margin: 0 .1rem;
+	line-height: 1rem;
+	text-align: center;
+	width: 1rem;
+}
+
+.footer-logo {
+	margin-bottom: 2.5rem;
+}
