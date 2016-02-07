@@ -6,11 +6,21 @@ $purple: #b293bf;
 	background-color: #fff;
 	text-align: center;
 	padding: 4.3rem 0;
+
+	&.dark {
+		background-color: #3d4d61;
+		color: #ffffff;
+	}
 }
 
 .hiw-title {
 	font-size: 1.5rem;
+	line-height: 2.25rem;
 	margin-bottom: 4.6rem;
+
+	.hiw.dark & {
+		margin-bottom: 3.8rem;
+	}
 }
 
 .hiw-box {
@@ -23,52 +33,57 @@ $purple: #b293bf;
 		margin-top: 1.3rem;
 	}
 
-	&.blue {
-		.hiw-container {
-			border-color: $blue;
+	.hiw:not(.dark) & {
+		&.blue {
+			.hiw-container {
+				border-color: $blue;
+			}
+			.hiw-step {
+				background-color: $blue;
+			}
+			.hiw-box-title {
+				color: $blue;
+			}
 		}
-		.hiw-step {
-			background-color: $blue;
-		}
-		.hiw-box-title {
-			color: $blue;
-		}
-	}
 
-	&.green {
-		.hiw-container {
-			border-color: $green;
+		&.green {
+			.hiw-container {
+				border-color: $green;
+			}
+			.hiw-step {
+				background-color: $green;
+			}
+			.hiw-box-title {
+				color: $green;
+			}
 		}
-		.hiw-step {
-			background-color: $green;
-		}
-		.hiw-box-title {
-			color: $green;
-		}
-	}
 
-	&.purple {
-		.hiw-container {
-			border-color: $purple;
-		}
-		.hiw-step {
-			background-color: $purple;
-		}
-		.hiw-box-title {
-			color: $purple;
+		&.purple {
+			.hiw-container {
+				border-color: $purple;
+			}
+			.hiw-step {
+				background-color: $purple;
+			}
+			.hiw-box-title {
+				color: $purple;
+			}
 		}
 	}
 }
 
 .hiw-container {
-	border-width: .5rem 0 0 0;
-	border-style: solid;
-	border-color: #ccc;
-	border-radius: 5px;
-	box-shadow: 0 0 5px 0 rgba(0, 0, 0, .12);
 	font-size: .9rem;
 	padding: 1.6rem 1.8rem;
 	text-align: center;
+
+	.hiw:not(.dark) & {
+		border-color: #ccc;
+		border-radius: 5px;
+		border-style: solid;
+		border-width: .5rem 0 0 0;
+		box-shadow: 0 0 5px 0 rgba(0, 0, 0, .12);
+	}
 }
 
 .hiw-step {
@@ -86,6 +101,21 @@ $purple: #b293bf;
 .hiw-box-title {
 	font-weight: normal;
 	font-size: 1.25rem;
+
+	.hiw.dark & {
+		font-size: 1.5rem;
+	}
+}
+
+.hiw-box-title-container {
+	display: block;
+	height: 5.5rem;
+
+	.hiw-box-title {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
 }
 
 .hiw-copy {
