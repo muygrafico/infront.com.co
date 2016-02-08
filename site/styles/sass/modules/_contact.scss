@@ -12,10 +12,23 @@
 	min-height: 535px;
 	position: relative;
 	text-align: center;
+
+	@include breakpoint('sm') {
+		margin-left: 40%;
+	}
+
+	@include breakpoint('xs') {
+		margin: 0;
+		min-height: auto;
+	}
 }
 
 .contact-box {
 	padding: 2.9rem;
+
+	@include breakpoint('md') {
+		padding: 2.9rem 1.5rem;
+	}
 }
 
 .contact-submit {

@@ -2,6 +2,10 @@
 	background-color: #ffffff;
 	padding: 7.5rem 0 6.25rem;
 	text-align: center;
+
+	@include breakpoint('xs') {
+		padding: 2em 0;
+	}
 }
 
 .features-hero {
@@ -10,13 +14,28 @@
 	line-height: 0;
 	margin: auto;
 	padding-bottom: 4.25rem;
+
+	@include breakpoint('xs') {
+		padding-bottom: 1rem;
+	}
 }
 
 .features-hero-box {
 	display: inline-block;
 	position: relative;
 	vertical-align: top;
+	line-height: 1rem;
+	font-size: 1rem;
 	width: 50%;
+
+	@include breakpoint('xs') {
+		display: block;
+		width: 100%;
+
+		img {
+			margin-top: 1rem;
+		}
+	}
 
 	img {
 		width: 100%;
@@ -30,6 +49,12 @@
 	position: absolute;
 	text-align: left;
 	top: 50%;
+
+	@include breakpoint('xs') {
+		position: static;
+		top: 0;
+		text-align: center;
+	}
 
 	small {
 		display: block;
@@ -49,15 +74,29 @@
 	display: inline-block;
 	vertical-align: top;
 	width: 25%;
+
+	@include breakpoint('xs') {
+		display: block;
+		margin-bottom: 3rem;
+		width: 100%;
+	}
 }
 
 .features-item-icon {
 	height: 63px;
+
+	@include breakpoint('xs') {
+		height: auto;
+	}
 }
 
 .features-item-title {
 	font-size: 1.5rem;
 	line-height: 1.8rem;
+
+	@include breakpoint('xs') {
+		margin: 1em 0 .5em;
+	}
 }
 
 .features-item-copy {

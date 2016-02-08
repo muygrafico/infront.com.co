@@ -21,6 +21,11 @@
 	vertical-align: top;
 	width: 37%;
 
+	@include breakpoint('xs') {
+		display: block;
+		width: 100%;
+	}
+
 	&:not(:first-child) {
 		padding: 0 3.1rem;
 	}
@@ -51,10 +56,18 @@
 .footer-title {
 	font-size: 1.1rem;
 	margin-bottom: 1.5rem;
+
+	@include breakpoint('xs') {
+		font-size: 1rem;
+	}
 }
 
 .footer-copy {
 	margin: 0;
+
+	@include breakpoint('xs') {
+		font-size: .8rem;
+	}
 }
 
 .footer-nav {
@@ -67,6 +80,10 @@
 .footer-social {
 	font-size: .6rem;
 	margin-top: .4rem;
+
+	@include breakpoint('xs') {
+		margin-top: 1.5em;
+	}
 }
 
 .footer-social-item {
@@ -77,11 +94,26 @@
 	font-size: .7rem;
 	height: 1rem;
 	margin: 0 .1rem;
-	line-height: 1rem;
+	line-height: 1.5em;
 	text-align: center;
 	width: 1rem;
+
+	@include breakpoint('xs') {
+		font-size: 1.4rem;
+		height: 2rem;
+		width: 2rem;
+	}
 }
 
 .footer-logo {
 	margin-bottom: 2.5rem;
+}
+
+.footer-copy {
+	font-size: .6rem;
+
+	@include breakpoint('xs') {
+		display: block;
+		margin-top: .5em;
+	}
 }

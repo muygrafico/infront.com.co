@@ -7,6 +7,10 @@ $purple: #b293bf;
 	text-align: center;
 	padding: 4.3rem 0;
 
+	@include breakpoint('xs') {
+		padding: 2rem 0;
+	}
+
 	&.dark {
 		background-color: #3d4d61;
 		color: #ffffff;
@@ -18,6 +22,10 @@ $purple: #b293bf;
 	line-height: 2.25rem;
 	margin-bottom: 4.6rem;
 
+	@include breakpoint('xs') {
+		margin-bottom: 1.5rem;
+	}
+
 	.hiw.dark & {
 		margin-bottom: 3.8rem;
 	}
@@ -27,7 +35,16 @@ $purple: #b293bf;
 	display: inline-block;
 	margin: 0 1rem;
 	vertical-align: top;
-	width: calc(33% - 2rem);
+	width: calc(32% - 2rem);
+
+	@include breakpoint('md') {
+		margin: 0 .5rem;
+	}
+
+	@include breakpoint('xs') {
+		margin: 1rem 0;
+		width: 100%;
+	}
 
 	.button {
 		margin-top: 1.3rem;
@@ -77,6 +94,14 @@ $purple: #b293bf;
 	padding: 1.6rem 1.8rem;
 	text-align: center;
 
+	@include breakpoint('md') {
+		padding: 1.6rem .5rem;
+	}
+
+	@include breakpoint('xs') {
+		padding: 1rem;
+	}
+
 	.hiw:not(.dark) & {
 		border-color: #ccc;
 		border-radius: 5px;
@@ -120,4 +145,7 @@ $purple: #b293bf;
 
 .hiw-copy {
 	line-height: 1.75rem;
+}
+
+.hiw-image {
 }
