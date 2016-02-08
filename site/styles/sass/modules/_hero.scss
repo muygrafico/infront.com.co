@@ -14,6 +14,7 @@
 
 	@include breakpoint('sm') {
 		margin: auto;
+		padding: 2rem 1rem;
 	}
 
 	@include breakpoint('xs') {

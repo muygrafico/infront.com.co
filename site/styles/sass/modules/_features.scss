@@ -75,10 +75,21 @@
 	vertical-align: top;
 	width: 25%;
 
+	@include breakpoint('sm') {
+		margin: 0 1rem;
+		width: 40%;
+	}
+
 	@include breakpoint('xs') {
 		display: block;
-		margin-bottom: 3rem;
+		margin: 0 auto 3rem;
 		width: 100%;
+	}
+}
+
+.features-separator {
+	@include breakpoint('sm') {
+		display: block;
 	}
 }
 

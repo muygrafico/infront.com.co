@@ -38,12 +38,32 @@ $purple: #b293bf;
 	width: calc(32% - 2rem);
 
 	@include breakpoint('md') {
-		margin: 0 .5rem;
+		.hiw:not(.dark) & {
+			display: block;
+			margin: 2rem auto;
+			width: 50%;
+		}
+
+		.hiw.dark & {
+			width: 40%;
+
+			&:last-child {
+				display: block;
+				margin: 1rem auto;
+			}
+		}
 	}
 
 	@include breakpoint('xs') {
-		margin: 1rem 0;
-		width: 100%;
+		.hiw.dark & {
+			display: block;
+			margin: 1rem auto;
+			width: 100% !important;
+		}
+
+		.hiw:not(.dark) & {
+			width: 80%;
+		}
 	}
 
 	.button {
