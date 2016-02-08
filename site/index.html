@@ -20,20 +20,23 @@
 		</div>
 	</div>
 	<header class="nav">
+		<div class="nav-mobile">
+			<i class="nav-mobile-icon icon-hamburguer"></i>
+		</div>
 		<div class="nav-logo">
 			<img src="images/logo.png" alt="">
 		</div>
-		<nav>
+		<nav class="nav-container">
 			<ul class="nav-options">
-				<li class="nav-option"><a href="#">¿como funciona?</a></li>
-				<li class="nav-option"><a href="#">mejore su gestión</a></li>
-				<li class="nav-option"><a href="#">fácil acceso</a></li>
-				<li class="nav-option"><a href="#">registro</a></li>
-				<li class="nav-option"><a href="#">sobre nosotros</a></li>
+				<li class="nav-option"><a data-scroll href="#como-funciona">¿como funciona?</a></li>
+				<li class="nav-option"><a data-scroll href="#mejore-su-gestion">mejore su gestión</a></li>
+				<li class="nav-option"><a data-scroll href="#facil-acceso">fácil acceso</a></li>
+				<li class="nav-option"><a data-scroll href="#registro">registro</a></li>
+				<li class="nav-option"><a data-scroll href="#sobre-nosotros">sobre nosotros</a></li>
 			</ul>
 		</nav>
 		<div class="nav-cta-box">
-			<a href="#" class="button"><i class="icon-download"></i> Descargar excel</a>
+			<a data-scroll href="#registro" class="button"><i class="icon-download"></i> Descargar excel</a>
 		</div>
 	</header>
 
@@ -44,11 +47,11 @@
 		<div class="hero-content">
 			<h2 class="hero-title">Incremente Ventas.<br /> Controle Costos</h2>
 			<p class="hero-copy">La Plataforma de gestión inFront hace más fácil que usted administre su negocio, controlando los costos, mejorando las ventas y tomando decisiones rápidamente</p>
-			<a href="#" class="button is-large">Regístrese aquí</a>
+			<a data-scroll href="#registro" class="button is-large">Regístrese aquí</a>
 		</div>
 	</div>
 
-	<div class="hiw">
+	<div class="hiw" id="como-funciona">
 		<div class="container">
 			<div class="hiw-title">¿Cómo Funciona?</div>
 			<ul>
@@ -58,7 +61,7 @@
 						<h3 class="hiw-box-title">Me registro</h3>
 						<p class="hiw-copy">Pre-registro mi negocio y recibo 1 mes gratis de acceso a la Plataforma inFront</p>
 					</div>
-					<a href="#" class="button is-full">Regístrese aquí</a>
+					<a data-scroll href="#registro" class="button is-full">Regístrese aquí</a>
 				</li>
 				<li class="hiw-box green">
 					<div class="hiw-container">
@@ -85,7 +88,7 @@
 		<img src="http://lorempixel.com/1440/575/technics/4" alt="">
 	</div>
 
-	<div class="hiw dark">
+	<div class="hiw dark" id="mejore-su-gestion">
 		<div class="container">
 			<div class="hiw-title">La Plataforma de gestión más efectiva <br /> para la administración de su negocio</div>
 			<ul>
@@ -120,7 +123,7 @@
 		</div>
 	</div>
 
-	<div class="features">
+	<div class="features" id="facil-acceso">
 		<div class="container">
 			<div class="features-hero">
 				<div class="features-hero-box">
@@ -182,7 +185,7 @@
 		</div>
 	</div>
 
-	<div class="contact">
+	<div class="contact" id="registro">
 		<div class="container xs-no-padding">
 			<div class="contact-container">
 				<div class="contact-box">
@@ -212,7 +215,7 @@
 		</div>
 	</div>
 
-	<footer class="footer">
+	<footer class="footer" id="sobre-nosotros">
 		<div class="container">
 			<div class="footer-container">
 				<div class="footer-logo">
@@ -249,6 +252,10 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- scripts -->
+	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
 </html>

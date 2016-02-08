@@ -18,7 +18,7 @@ gulp.task('watch:html', function() {
 // Watch js files changes and run js:dev
 
 gulp.task('watch:js', function() {
-	return gulp.watch(['site/js/dev/*.js', 'site/js/dev/**/*.js'], ['js:dev', 'browser:reload']);
+	return gulp.watch(['site/js/*.js', 'site/js/**/*.js'], ['js:dev', 'browser:reload']);
 });
 
 //Watch

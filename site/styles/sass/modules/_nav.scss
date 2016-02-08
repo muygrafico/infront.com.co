@@ -5,6 +5,55 @@ $fontSize: 0.875rem;
 	font-size: $fontSize;
 	position: relative;
 	text-align: center;
+
+	&.is-fixed {
+		left: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		z-index: 1;
+	}
+
+	@include breakpoint('sm') {
+		left: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		z-index: 1;
+	}
+}
+
+.nav-mobile {
+	display: none;
+
+	@include breakpoint('sm') {
+		display: block;
+	}
+}
+
+.nav-container {
+	@include breakpoint('sm') {
+		background-color: #ffffff;
+		height: 100%;
+		left: -100%;
+		position: fixed;
+		transition: left .25s ease-in-out;
+		width: 100%;
+		z-index: 1;
+
+		&.is-open {
+			left: 0;
+		}
+	}
+}
+
+.nav-mobile-icon {
+	cursor: pointer;
+	font-size: 1.5rem;
+	left: .5em;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .nav-logo {
@@ -34,10 +83,6 @@ $fontSize: 0.875rem;
 .nav-options {
 	padding: 0;
 	margin: 0;
-
-	@include breakpoint('sm') {
-		display: none;
-	}
 }
 
 .nav-option {
@@ -45,6 +90,10 @@ $fontSize: 0.875rem;
 	font-weight: bold;
 	padding: 1.875rem .68rem;
 	text-transform: uppercase;
+
+	@include breakpoint('sm') {
+		display: block;
+	}
 
 	a {
 		color: initial;

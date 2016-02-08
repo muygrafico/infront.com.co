@@ -2,6 +2,14 @@
 	overflow: hidden;
 	position: relative;
 	width: 100%;
+
+	body.fixed-nav & {
+		margin-top: 77px;
+	}
+
+	@include breakpoint('sm') {
+		padding-top: 50px;
+	}
 }
 
 .hero-content {
