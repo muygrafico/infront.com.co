@@ -9,9 +9,19 @@
 		padding: 1.8rem 0 .6rem;
 		width: 100%;
 
-		&:focus + label, &.not-empty {
+		&:focus + label, &.dirty + label {
 			font-size: .6em;
 			top: .5rem;
+		}
+
+		&.dirty {
+			&:invalid {
+				border-bottom: 1px solid #e74c3c;
+
+				& + label {
+					color: #e74c3c;
+				}
+			}
 		}
 	}
 

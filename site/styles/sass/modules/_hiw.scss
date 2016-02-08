@@ -114,8 +114,13 @@ $purple: #b293bf;
 	padding: 1.6rem 1.8rem;
 	text-align: center;
 
+	.hiw-box:not(.not-change) & {
+		height: 100%;
+	}
+
 	@include breakpoint('md') {
 		padding: 1.6rem .5rem;
+		height: auto !important;
 	}
 
 	@include breakpoint('xs') {

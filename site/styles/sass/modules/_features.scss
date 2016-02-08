@@ -88,6 +88,8 @@
 }
 
 .features-separator {
+	display: none;
+
 	@include breakpoint('sm') {
 		display: block;
 	}
