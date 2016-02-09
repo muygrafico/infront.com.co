@@ -49,6 +49,10 @@
 	position: absolute;
 	text-align: left;
 	top: 50%;
+	small{
+		font-family: $font-2;
+		font-weight: 300;
+	}
 
 	@include breakpoint('xs') {
 		position: static;
