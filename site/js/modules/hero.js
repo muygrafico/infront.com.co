@@ -1,6 +1,10 @@
 (function($) {
 	$(document).ready(function(){
-		initHero();
+
+		setTimeout(function(){
+				initHero();
+			}, 4000);
+
 	});
 
 	function initHero() {
@@ -23,10 +27,11 @@
 		console.log(copy, colors);
 
 		$(".hero-type").typed({
-			'backDelay': 3000,
+			'backDelay': 3500,
 			'loop': true,
 			'strings': copy,
-			'typeSpeed': 0,
+			'typeSpeed': 100,
+			'backSpeed': 75,
 			'onStringTyped': function() {
 				// change to next slide when the string is typed
 				// you can change the slide before the string is typed moving nextSlide() function to preStringTyped callback
@@ -44,16 +49,17 @@
 		var timeout = null;
 
 		$('.hero-slider').slick({
-			'accessibility': false,
-			'adaptiveHeight': true,
+			// 'accessibility': false,
+			// 'adaptiveHeight': true,
 			'arrows': false,
 			'centerMode': true,
 			'centerPadding': '0px',
 			'cssEase': 'ease-in-out',
-			'draggable': false,
-			'slidesToShow': 1,
-			'swipe': false,
-			'variableWidth': true
+			// 'draggable': false,
+			// 'slidesToShow': 1,
+			// 'swipe': false,
+			// 'variableWidth': true,
+			'fade': true
 		});
 
 		$('.hero-slider img').each(function() {

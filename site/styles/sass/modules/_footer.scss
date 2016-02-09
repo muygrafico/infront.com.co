@@ -1,5 +1,5 @@
 .footer {
-	background-color: $grayBlue;
+	background-color: $darkBlue;
 	padding: 4rem 0 3rem;
 
 	a {
@@ -35,7 +35,7 @@
 	}
 
 	&.small {
-		border-left: 1px solid #ffffff;
+		border-left: 1px solid #37424f;
 		position: relative;
 		top: 3.5rem;
 		padding-right: 0;
@@ -66,19 +66,16 @@
 	}
 }
 
-.footer-copy {
-	margin: 0;
-
-	@include breakpoint('xs') {
-		font-size: .8rem;
-	}
-}
 
 .footer-nav {
 }
 
 .footer-nav-item {
 	display: block;
+	font-family: $font-2;
+	font-weight: 300;
+	font-size: 0.85rem;
+	opacity: 0.75;
 }
 
 .footer-social {
@@ -91,16 +88,17 @@
 }
 
 .footer-social-item {
-	background-color: #2c3e50;
+	background-color: white;
 	border-radius: 50%;
 	color: $grayBlue;
 	display: inline-block;
-	font-size: .7rem;
-	height: 1rem;
-	margin: 0 .1rem;
-	line-height: 1.5em;
+	font-size: 1rem;
+	width: 1.7rem;
+	height: 1.7rem;
+	line-height: 1.7rem;
 	text-align: center;
-	width: 1rem;
+	margin: 0 .1rem;
+
 
 	@include breakpoint('sm') {
 		font-size: 1rem;
@@ -120,11 +118,18 @@
 }
 
 .footer-copy {
-	font-size: .6rem;
+	font-size: 0.85rem;
+	color: white;
+	opacity: 0.75;
 	margin: 0 .5em;
+	font-family: $font-2;
+	font-weight: 300;
+	margin-bottom: 2.5rem;
+	letter-spacing: 0.5px;
 
 	@include breakpoint('xs') {
 		display: block;
 		margin: .5em 0;
 	}
 }
+

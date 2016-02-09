@@ -8,6 +8,9 @@
 	@if $point == 'md' {
 		@media screen and (max-width: $mdMax) { @content; }
 	}
+	@if $point == 'lg' {
+		@media screen and (max-width: $lgMax) { @content; }
+	}
 
 	//Min
 	@if $point == 'min-md' {

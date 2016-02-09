@@ -3,6 +3,9 @@
 	line-height: 0;
 	text-align: center;
 	width: 100%;
+	padding-bottom: 1px;
+	background: white;
+
 
 	@include breakpoint('xs') {
 		display: none;
@@ -11,5 +14,11 @@
 	img {
 		display: inline-block;
 		width: 25%;
+		@include breakpoint('md') {
+			width: 50%;
+			&:nth-child(2), &:nth-child(3) {
+				display: none;
+			}
+		}
 	}
 }
