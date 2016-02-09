@@ -1,14 +1,27 @@
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
 .hero {
 	overflow: hidden;
 	position: relative;
 	width: 100%;
 
-	body.fixed-nav & {
-		margin-top: 77px;
+	@include breakpoint('min-md') {
+		body.fixed-nav & {
+			margin-top: 77px;
+		}
 	}
 
 	@include breakpoint('sm') {
 		padding-top: 50px;
+	}
+
+	.typed-cursor{
+	    animation: blink 0.7s infinite;
+	    opacity: 1;
 	}
 }
 
@@ -19,6 +32,7 @@
 	padding: 4rem 0 7rem;
 	position: relative;
 	text-align: center;
+	z-index: 2;
 
 	@include breakpoint('sm') {
 		margin: auto;
@@ -51,14 +65,35 @@
 	}
 }
 
+.hero-type {
+}
+
+.hero-type-copy {
+	display: none;
+}
+
 .hero-container {
 	bottom: 0;
 	left: 0;
-	position: absolute;
+	position: absolute !important;
 	right: 0;
 	top: 0;
 
-	img {
+
+	.hero-slider {
 		height: 100%;
+		transition: opacity .5s ease-out;
+
+		&.loading {
+			opacity: 0;
+		}
+
+		.slick-list {
+			height: 100%;
+
+			.slick-track {
+				height: 100%;
+			}
+		}
 	}
 }

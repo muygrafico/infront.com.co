@@ -34,3 +34,30 @@
 		transform: translate3d(0,0,0);
 	}
 }
+
+.checkbox-container {
+	position: relative;
+	width: 100%;
+	text-align: left;
+	margin: 1em 0;
+
+	input {
+		display: none;
+	}
+
+	label {
+		cursor: pointer;
+
+		&:before {
+			@extend .icon;
+			@extend .icon-uncheck;
+			margin-right: .5em;
+		}
+	}
+
+	input:checked + label {
+		&:before {
+			@extend .icon-check;
+		}
+	}
+}

@@ -3,8 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="styles/css/main.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="styles/css/main.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -36,17 +38,23 @@
 			</ul>
 		</nav>
 		<div class="nav-cta-box">
-			<a data-scroll href="#registro" class="button"><i class="icon-download"></i> Descargar excel</a>
+			<a data-scroll href="#registro" class="button">Registrese aquí</a>
 		</div>
 	</header>
 
 	<div class="hero">
 		<div class="hero-container">
-			<img src="http://lorempixel.com/1440/575/business/1" alt="">
+			<div class="hero-slider loading">
+				<img src="http://lorempixel.com/1440/575/business/1" alt="">
+				<img src="http://lorempixel.com/1440/575/business/2" alt="">
+				<img src="http://lorempixel.com/1440/575/business/3" alt="">
+				<img src="http://lorempixel.com/1440/575/business/4" alt="">
+				<img src="http://lorempixel.com/1440/575/business/5" alt="">
+			</div>
 		</div>
 		<div class="hero-content">
 			<h2 class="hero-title">Incremente Ventas.<br /> Controle Costos</h2>
-			<p class="hero-copy">La Plataforma de gestión inFront hace más fácil que usted administre su negocio, controlando los costos, mejorando las ventas y tomando decisiones rápidamente</p>
+			<p class="hero-copy">La Plataforma de gestión inFront hace más fácil que usted administre su <span class="hero-type" data-copy="negocio|#2ecc71,almacen|#aa66cc,cafeteria|#e67e22,centro pokémon|#f1c40f,hall de la fama|gray">negocio</span>, controlando los costos, mejorando las ventas y tomando decisiones rápidamente</p>
 			<a data-scroll href="#registro" class="button is-large">Regístrese aquí</a>
 		</div>
 	</div>
@@ -208,6 +216,10 @@
 							<input type="text" id="phone" name="phone" required>
 							<label class="input-label" for="phone">Número celular</label>
 						</div>
+						<div class="checkbox-container">
+							<input type="checkbox" id="check" name="check">
+							<label for="check">Checkbox</label>
+						</div>
 						<button class="button contact-submit is-full white">Recibir mis 2 meses gratis</button>
 					</form>
 				</div>
@@ -255,6 +267,7 @@
 
 	<!-- scripts -->
 	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
 	<script src="js/main.js"></script>
 
 </body>

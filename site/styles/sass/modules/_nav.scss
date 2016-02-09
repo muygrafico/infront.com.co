@@ -11,7 +11,7 @@ $fontSize: 0.875rem;
 		position: fixed;
 		right: 0;
 		top: 0;
-		z-index: 1;
+		z-index: 3;
 	}
 
 	@include breakpoint('sm') {
@@ -19,7 +19,7 @@ $fontSize: 0.875rem;
 		position: fixed;
 		right: 0;
 		top: 0;
-		z-index: 1;
+		z-index: 3;
 	}
 }
 
@@ -76,7 +76,12 @@ $fontSize: 0.875rem;
 	transform: translateY(-50%);
 
 	@include breakpoint('sm') {
-		display: none;
+		font-size: .7em;
+		right: .5em;
+
+		.button {
+			padding: 1em;
+		}
 	}
 }
 
