@@ -12,6 +12,39 @@
 	min-height: 535px;
 	position: relative;
 	text-align: center;
+	.success{
+		width: 80%;
+		margin: 0 auto;
+		padding-bottom: 7rem;
+
+		@include breakpoint('lg') {
+			margin-top: 7rem;
+		}
+		@include breakpoint('md') {
+			margin-top: 3rem;
+		}
+		h3.name {
+			font-size: 1.55rem;
+			margin-bottom: 0;
+		}
+		p {margin: 0;}
+		p.copy{
+			margin-top: 0;
+			font-weight: 300;
+			font-family: $font-2;
+		}
+		hr{
+			opacity: 0.2;
+			margin: 1rem 0;
+		}
+	}
+	.checkbox-container{
+		margin-top: 20px;
+		label{
+			font-weight: 400;
+			font-size: 0.9rem;
+		}
+	}
 
 	@include breakpoint('md') {
 		margin-left: 40%;
