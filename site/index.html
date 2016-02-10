@@ -270,7 +270,27 @@
 			</div>
 		</div>
 	</footer>
+	<div>
+		<!-- Contact Form - sent to a Google Sheet -->
+    <form id='foo'>
+      <p>
+        <label>Name</label>
+        <input id='name' name='name' type='text'>
+      </p><p>
+        <label>Email Address</label>
+        <input id='email' name='email' type='email'>
+      </p><p>
+        <label>Phone Number</label>
+        <input id='phone' name='phone' type='tel'>
+      </p><p>
+        <label>Message</label>
+        <textarea id='message' name='message' rows='5'></textarea>
+      </p>
+        <div id='success'></div>
+        <button type='submit'>Send</button>
+    </form>
 
+	</div>
 	<!-- scripts -->
 	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>

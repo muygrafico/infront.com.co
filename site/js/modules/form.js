@@ -8,3 +8,4 @@
 		console.log($(event.target).hasClass('dirty'));
 	}
 })($);
+
