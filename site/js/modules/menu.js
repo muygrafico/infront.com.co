@@ -5,10 +5,8 @@
 	var $nav = $('.nav');
 	var $preNav = $('.pre-nav');
 
-	$('a[data-scroll').click(function() {
-		smoothScroll.init({
-			offset: $nav.height()
-		});
+	smoothScroll.init({
+		offset: $nav.height()
 	});
 
 	$(window).scroll(checkViewport);

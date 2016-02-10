@@ -24,8 +24,6 @@
 			colors.push(temp[1]);
 		}
 
-		console.log(copy, colors);
-
 		$(".hero-type").typed({
 			'backDelay': 3500,
 			'loop': true,
