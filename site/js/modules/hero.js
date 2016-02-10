@@ -47,16 +47,17 @@
 		var timeout = null;
 
 		$('.hero-slider').slick({
-			// 'accessibility': false,
-			// 'adaptiveHeight': true,
+			// // 'accessibility': false,
+			'adaptiveHeight': true,
 			'arrows': false,
 			'centerMode': true,
 			'centerPadding': '0px',
 			'cssEase': 'ease-in-out',
-			// 'draggable': false,
-			// 'slidesToShow': 1,
-			// 'swipe': false,
+			// // 'draggable': false,
+			// // 'slidesToShow': 1,
+			// // 'swipe': false,
 			// 'variableWidth': true,
+			// 'dots': true,
 			'fade': true
 		});
 

@@ -96,6 +96,10 @@ $fontSize: 0.875rem;
 	padding: 1.875rem .68rem;
 	text-transform: uppercase;
 
+	@include breakpoint('md') {
+	padding: 1.875rem .25rem;
+	}
+
 	@include breakpoint('sm') {
 		display: block;
 	}
