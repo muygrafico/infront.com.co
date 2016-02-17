@@ -50,7 +50,7 @@
 			// // 'accessibility': false,
 			'adaptiveHeight': true,
 			'arrows': false,
-			'centerMode': true,
+			// 'centerMode': true,
 			'centerPadding': '0px',
 			'cssEase': 'ease-in-out',
 			// // 'draggable': false,
