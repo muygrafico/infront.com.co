@@ -1,7 +1,7 @@
 console.log('load form js');
 // Variable to hold request
 var request;
-var scriptURL = "https://script.google.com/macros/s/AKfycby_ZWVM0ao9tfYBTMSrO_v_H22QPy2pl7st_ybX457kmZeXqh8/exec";
+var scriptURL = "https://script.google.com/macros/s/AKfycbxTqlLuKJ_FRY_DodCnICFCJLDcR6h5pKAJLVbKLgL2mTUTbsM/exec";
 // Bind to the submit event of our form
 
 $("#registro form").submit(function(event){

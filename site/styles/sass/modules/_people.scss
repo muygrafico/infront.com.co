@@ -62,13 +62,31 @@
 
 .people-quote {
 	display: block;
-	font-size: 1.25rem;
+	font-size: 1.15rem;
 	font-style: italic;
 	font-weight: normal;
 	line-height: 1.6em;
 	margin-top: 1.5rem;
 	font-weight: 300;
 	font-family: $font-2;
+	&:before{
+		color: #ccc;
+  	content: open-quote;
+  	font-size: 4em;
+  	line-height: 0.1em;
+  	margin-right: 0.15em;
+  	vertical-align: -0.4em;
+  	font-family: 'Serif';
+	}
+	&:after{
+			color: #ccc;
+  	content: close-quote;
+  	font-size: 4em;
+  	line-height: 0.1em;
+  	margin-right: 0.15em;
+  	vertical-align: -0.4em;
+  	font-family: 'Serif';
+	}
 
 	@include breakpoint('xs') {
 		margin-top: .5rem;
