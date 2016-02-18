@@ -42,7 +42,7 @@ $("#registro form").submit(function(event){
         var form_name = $('#name').val();
 
         $("#registro form").remove();
-				$("#registro .contact-container").append('<div class="success"><h3 class="name">'+ form_name +'</h3><br><p>¡Gracias por Pre-Registrarte a inFront!<hr/></p><p class="copy">!Muy pronto nos pondremos en contacto para darte acceso a tus 2 meses de Prueba Grátis!</p></div>');
+				$("#registro .contact-container").append('<div class="success"><h3 class="name">'+ form_name +'</h3><br><p>¡Gracias por Pre-Registrarte a inFront!<hr/></p><p class="copy">!Muy pronto nos pondremos en contacto para darte acceso a tu Primer mes Gratis!</p></div>');
 
     });
 

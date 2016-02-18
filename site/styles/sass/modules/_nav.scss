@@ -93,6 +93,11 @@ $fontSize: 0.875rem;
 .nav-option {
 	display: inline-block;
 	font-weight: bold;
+
+	@include breakpoint('md') {
+		font-size: 0.72rem;
+	}
+
 	padding: 1.875rem .68rem;
 	text-transform: uppercase;
 
