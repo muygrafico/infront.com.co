@@ -1,0 +1,35 @@
+.dots {
+	background-color: rgba(#2a2929, .7);
+	border-radius: 5px 0 0 5px;
+	padding: 20px 0;
+	position: fixed;
+	right: -40px;
+	top: 100px;
+	width: 40px;
+	z-index: 10;
+	transition: right .4s ease-in-out;
+
+	&.initialized {
+		right: 0;
+	}
+}
+
+.dot {
+	display: block;
+	padding: 10px 15px;
+
+	&:before {
+		background-color: #868686;
+		border-radius: 50%;
+		content: '';
+		display: block;
+		height: 10px;
+		width: 10px;
+	}
+
+	&.is-activate {
+		&:before {
+			background-color: #ffffff;
+		}
+	}
+}

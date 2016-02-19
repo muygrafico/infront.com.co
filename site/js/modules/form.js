@@ -1,4 +1,4 @@
-(function() {
+(function($) {
 	var $inputs = $('input');
 
 	$inputs.on('keypress', checkInput);
